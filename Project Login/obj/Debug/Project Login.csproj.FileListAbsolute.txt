@@ -1,0 +1,10 @@
+F:\c#\i do\Project Login\Project Login\bin\Debug\Project Login.exe.config
+F:\c#\i do\Project Login\Project Login\bin\Debug\Project Login.exe
+F:\c#\i do\Project Login\Project Login\bin\Debug\Project Login.pdb
+F:\c#\i do\Project Login\Project Login\obj\Debug\Project Login.csprojResolveAssemblyReference.cache
+F:\c#\i do\Project Login\Project Login\obj\Debug\Project_Login.Form1.resources
+F:\c#\i do\Project Login\Project Login\obj\Debug\Project_Login.Properties.Resources.resources
+F:\c#\i do\Project Login\Project Login\obj\Debug\Project Login.csproj.GenerateResource.Cache
+F:\c#\i do\Project Login\Project Login\obj\Debug\Project Login.exe
+F:\c#\i do\Project Login\Project Login\obj\Debug\Project Login.pdb
+F:\c#\i do\Project Login\Project Login\obj\Debug\Project_Login.Regstration.resources
