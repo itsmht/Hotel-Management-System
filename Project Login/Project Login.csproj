@@ -50,6 +50,24 @@
     <Compile Include="Customer Service.Designer.cs">
       <DependentUpon>Customer Service.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDelete.Designer.cs">
+      <DependentUpon>EmployeeDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetails.Designer.cs">
+      <DependentUpon>EmployeeDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeExtended.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeExtended.Designer.cs">
+      <DependentUpon>EmployeeExtended.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,15 @@
     </Compile>
     <EmbeddedResource Include="Customer Service.resx">
       <DependentUpon>Customer Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDelete.resx">
+      <DependentUpon>EmployeeDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDetails.resx">
+      <DependentUpon>EmployeeDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeExtended.resx">
+      <DependentUpon>EmployeeExtended.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

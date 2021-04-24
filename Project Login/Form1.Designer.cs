@@ -37,17 +37,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Password = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -143,6 +143,15 @@
             this.label7.Size = new System.Drawing.Size(0, 13);
             this.label7.TabIndex = 9;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Project_Login.Properties.Resources.computer_icons_user_login_desktop_wallpaper_png_favpng_50cVSt0m1jw7SRtPEv8KvVUvF;
+            this.pictureBox4.Location = new System.Drawing.Point(15, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(52, 31);
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.Password);
@@ -159,7 +168,7 @@
             // 
             this.Password.AutoSize = true;
             this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.Location = new System.Drawing.Point(69, 12);
+            this.Password.Location = new System.Drawing.Point(73, 12);
             this.Password.Name = "Password";
             this.Password.Size = new System.Drawing.Size(118, 24);
             this.Password.TabIndex = 12;
@@ -194,15 +203,6 @@
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Project_Login.Properties.Resources.computer_icons_user_login_desktop_wallpaper_png_favpng_50cVSt0m1jw7SRtPEv8KvVUvF;
-            this.pictureBox4.Location = new System.Drawing.Point(15, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(52, 31);
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Project_Login.Properties.Resources._4051934_middle;
@@ -229,10 +229,10 @@
             this.Text = "Login panel";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
