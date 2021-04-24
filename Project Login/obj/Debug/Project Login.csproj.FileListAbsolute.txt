@@ -24,3 +24,6 @@ H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\bin\Debug\Project Login.exe.config
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project Login.exe
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project Login.pdb
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.EmployeeDelete.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.EmployeeDetails.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.EmployeeExtended.resources

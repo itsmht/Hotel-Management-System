@@ -16,5 +16,20 @@ namespace Project_Login
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Regstration().Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new EmployeeDetails().Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new EmployeeDelete ().Show();
+        }
     }
 }
