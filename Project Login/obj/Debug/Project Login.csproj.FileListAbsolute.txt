@@ -9,3 +9,15 @@ F:\c#\i do\Project Login\Project Login\obj\Debug\Project Login.exe
 F:\c#\i do\Project Login\Project Login\obj\Debug\Project Login.pdb
 F:\c#\i do\Project Login\Project Login\obj\Debug\Project_Login.Regstration.resources
 F:\c#\i do\Project Login\Project Login\obj\Debug\Project_Login.Customer_Service.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\bin\Debug\Project Login.exe.config
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project Login.exe
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project Login.pdb
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\bin\Debug\Project Login.exe
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\bin\Debug\Project Login.pdb
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project Login.csprojResolveAssemblyReference.cache
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Customer_Service.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Form1.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Properties.Resources.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Regstration.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project Login.csproj.GenerateResource.Cache
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.MainManu.resources
