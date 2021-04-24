@@ -36,18 +36,18 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Password = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,6 +92,7 @@
             this.button2.TabIndex = 10;
             this.button2.Text = "Registration";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label5
             // 
@@ -131,15 +132,6 @@
             this.label7.Size = new System.Drawing.Size(0, 13);
             this.label7.TabIndex = 9;
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Project_Login.Properties.Resources.computer_icons_user_login_desktop_wallpaper_png_favpng_50cVSt0m1jw7SRtPEv8KvVUvF;
-            this.pictureBox4.Location = new System.Drawing.Point(15, 12);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(52, 31);
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.Password);
@@ -172,24 +164,6 @@
             this.label4.Size = new System.Drawing.Size(0, 24);
             this.label4.TabIndex = 10;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Project_Login.Properties.Resources.download1;
-            this.pictureBox3.Location = new System.Drawing.Point(15, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(52, 29);
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Project_Login.Properties.Resources._4051934_middle;
-            this.pictureBox1.Location = new System.Drawing.Point(181, 57);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 88);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // Password
             // 
             this.Password.AutoSize = true;
@@ -210,6 +184,33 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Username :";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Project_Login.Properties.Resources.download1;
+            this.pictureBox3.Location = new System.Drawing.Point(15, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(52, 29);
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Project_Login.Properties.Resources.computer_icons_user_login_desktop_wallpaper_png_favpng_50cVSt0m1jw7SRtPEv8KvVUvF;
+            this.pictureBox4.Location = new System.Drawing.Point(15, 12);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(52, 31);
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Project_Login.Properties.Resources._4051934_middle;
+            this.pictureBox1.Location = new System.Drawing.Point(181, 57);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 88);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,10 +228,10 @@
             this.Text = "Login panel";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

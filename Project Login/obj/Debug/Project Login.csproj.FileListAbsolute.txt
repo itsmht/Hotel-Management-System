@@ -8,3 +8,4 @@ F:\c#\i do\Project Login\Project Login\obj\Debug\Project Login.csproj.GenerateRe
 F:\c#\i do\Project Login\Project Login\obj\Debug\Project Login.exe
 F:\c#\i do\Project Login\Project Login\obj\Debug\Project Login.pdb
 F:\c#\i do\Project Login\Project Login\obj\Debug\Project_Login.Regstration.resources
+F:\c#\i do\Project Login\Project Login\obj\Debug\Project_Login.Customer_Service.resources
