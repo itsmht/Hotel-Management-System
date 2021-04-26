@@ -44,6 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Room.Designer.cs">
+      <DependentUpon>Add Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer Details.Designer.cs">
+      <DependentUpon>Customer Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer Service.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +100,12 @@
     <Compile Include="Regstration.Designer.cs">
       <DependentUpon>Regstration.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add Room.resx">
+      <DependentUpon>Add Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer Details.resx">
+      <DependentUpon>Customer Details.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customer Service.resx">
       <DependentUpon>Customer Service.cs</DependentUpon>
     </EmbeddedResource>
