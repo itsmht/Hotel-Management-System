@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace Project_Login
 {
-    public partial class Add_Room : Form
+    public partial class CheckOut : Form
     {
-        public Add_Room()
+        public CheckOut()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

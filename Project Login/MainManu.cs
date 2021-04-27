@@ -27,6 +27,21 @@ namespace Project_Login
             new EmployeeExtended().Show();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new Customer_Details().Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            new Add_Room().Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new CheckOut().Show();
+        }
+
        
     }
 }

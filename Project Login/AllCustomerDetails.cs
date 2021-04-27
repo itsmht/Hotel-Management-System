@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Project_Login
 {
-    public partial class Add_Room : Form
+    public partial class AllCustomerDetails : Form
     {
-        public Add_Room()
+        public AllCustomerDetails()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

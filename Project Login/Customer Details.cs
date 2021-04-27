@@ -16,5 +16,20 @@ namespace Project_Login
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new AllCustomerDetails().Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            new InHotelCustomerDetails().Show();
+        }
     }
 }

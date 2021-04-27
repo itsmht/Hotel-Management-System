@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Project_Login
 {
-    public partial class Add_Room : Form
+    public partial class InHotelCustomerDetails : Form
     {
-        public Add_Room()
+        public InHotelCustomerDetails()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

@@ -50,6 +50,18 @@
     <Compile Include="Add Room.Designer.cs">
       <DependentUpon>Add Room.cs</DependentUpon>
     </Compile>
+    <Compile Include="AllCustomerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllCustomerDetails.Designer.cs">
+      <DependentUpon>AllCustomerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="Customer Details.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +98,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="InHotelCustomerDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InHotelCustomerDetails.Designer.cs">
+      <DependentUpon>InHotelCustomerDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainManu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +120,12 @@
     </Compile>
     <EmbeddedResource Include="Add Room.resx">
       <DependentUpon>Add Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllCustomerDetails.resx">
+      <DependentUpon>AllCustomerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer Details.resx">
       <DependentUpon>Customer Details.cs</DependentUpon>
@@ -120,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InHotelCustomerDetails.resx">
+      <DependentUpon>InHotelCustomerDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainManu.resx">
       <DependentUpon>MainManu.cs</DependentUpon>

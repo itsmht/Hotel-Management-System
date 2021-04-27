@@ -30,3 +30,8 @@ H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug
 C:\Users\Utshab\Documents\OOP2FinalProject\Hotel-Management-System\Project Login\bin\Debug\Project Login.exe.config
 C:\Users\Utshab\Documents\OOP2FinalProject\Hotel-Management-System\Project Login\obj\Debug\Project Login.exe
 C:\Users\Utshab\Documents\OOP2FinalProject\Hotel-Management-System\Project Login\obj\Debug\Project Login.pdb
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Add_Room.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Customer_Details.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.CheckOut.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.AllCustomerDetails.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.InHotelCustomerDetails.resources
