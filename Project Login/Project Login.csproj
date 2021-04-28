@@ -119,6 +119,7 @@
     <Compile Include="Regstration.Designer.cs">
       <DependentUpon>Regstration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Room.cs" />
     <EmbeddedResource Include="Add Room.resx">
       <DependentUpon>Add Room.cs</DependentUpon>
     </EmbeddedResource>

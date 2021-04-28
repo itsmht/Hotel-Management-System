@@ -100,7 +100,8 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Male ",
-            "Female"});
+            "Female",
+            "Others"});
             this.comboBox2.Location = new System.Drawing.Point(328, 96);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(319, 28);

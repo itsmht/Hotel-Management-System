@@ -52,9 +52,38 @@ namespace Project_Login
             var date = dtpBirthDate.Value.Date;
             string username = tbUserName.Text;
             string pass = tbPass.Text;
+            // Exceptions
+            
+            if (name == string.Empty)
+            {
+                MessageBox.Show("Name Required", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            if (email == string.Empty)
+            {
+                MessageBox.Show("Email Required", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            if (gender == string.Empty)
+            {
+                MessageBox.Show("Gender Required", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            if (username == string.Empty)
+            {
+                MessageBox.Show("Username Required", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            if (pass == string.Empty)
+            {
+                MessageBox.Show("Password Required", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            
+            //Database
+
+            else
+            {
             var conn = Database.ConnectDB();
-
-
             try
             {
                 conn.Open();
@@ -82,17 +111,10 @@ namespace Project_Login
                 MessageBox.Show(ex.Message);
             }
             conn.Close();
-        }
-
-        private void tbUserName_TextChanged(object sender, EventArgs e)
-        {
-            string username = tbUserName.Text;
-            if(username==string.Empty)
-            {
-                MessageBox.Show("Username Required","Warning!",MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
+            
         }
+
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);

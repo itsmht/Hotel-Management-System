@@ -19,27 +19,38 @@ namespace Project_Login
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new Customer_Service().Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new EmployeeExtended().Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new Customer_Details().Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new Add_Room().Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new CheckOut().Show();
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
         }
 
        
