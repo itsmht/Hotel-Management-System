@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Project_Login
 {
@@ -59,20 +60,32 @@ namespace Project_Login
 
         private void button1_Click(object sender, EventArgs e)
         {
-            /*string username = tbUserName.Text;
-            string password = tbPassword.Text;*/
-            string username = "admin";
-            string pass = "admin";
-            if (tbUserName.Text == username && tbPassword.Text == pass)
+            string username = tbUserName.Text;
+            string password = tbPassword.Text;
+            var conn = Database.ConnectDB();
+
+
+            try
             {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            string query = string.Format("select * from [user] where Username='{0}' and Password='{1}'", username, password);
+            SqlCommand cmd = new SqlCommand(query, conn);
+            SqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                this.Hide();
                 new MainManu().Show();
-                
             }
             else
             {
-                MessageBox.Show("The credentials you entered doesn't match our database!!!");
+                MessageBox.Show("Invalid User");
             }
-            
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -83,6 +96,12 @@ namespace Project_Login
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if(e.CloseReason != CloseReason.WindowsShutDown)
+            Application.Exit();
         }
     }
 }

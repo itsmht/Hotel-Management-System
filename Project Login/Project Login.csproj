@@ -74,6 +74,7 @@
     <Compile Include="Customer Service.Designer.cs">
       <DependentUpon>Customer Service.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database.cs" />
     <Compile Include="EmployeeDelete.cs">
       <SubType>Form</SubType>
     </Compile>
