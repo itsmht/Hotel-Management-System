@@ -59,7 +59,30 @@ namespace Project_Login
 
         private void button1_Click(object sender, EventArgs e)
         {
-            new MainManu().Show();
+            /*string username = tbUserName.Text;
+            string password = tbPassword.Text;*/
+            string username = "admin";
+            string pass = "admin";
+            if (tbUserName.Text == username && tbPassword.Text == pass)
+            {
+                new MainManu().Show();
+                
+            }
+            else
+            {
+                MessageBox.Show("The credentials you entered doesn't match our database!!!");
+            }
+            
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Project_Login
 {
@@ -40,6 +41,11 @@ namespace Project_Login
         private void button3_Click(object sender, EventArgs e)
         {
             new Form1().Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
