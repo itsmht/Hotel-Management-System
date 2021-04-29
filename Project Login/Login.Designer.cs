@@ -1,6 +1,6 @@
 ﻿namespace Project_Login
 {
-    partial class Form1
+    partial class LoginPanle
     {
         /// <summary>
         /// Required designer variable.
@@ -95,6 +95,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.tbUserName);
             this.panel1.Controls.Add(this.label7);
@@ -134,6 +135,7 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Image = global::Project_Login.Properties.Resources.computer_icons_user_login_desktop_wallpaper_png_favpng_50cVSt0m1jw7SRtPEv8KvVUvF;
             this.pictureBox4.Location = new System.Drawing.Point(15, 12);
             this.pictureBox4.Name = "pictureBox4";
@@ -143,6 +145,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.Password);
             this.panel2.Controls.Add(this.tbPassword);
             this.panel2.Controls.Add(this.label4);
@@ -185,6 +188,7 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::Project_Login.Properties.Resources.download1;
             this.pictureBox3.Location = new System.Drawing.Point(15, 9);
             this.pictureBox3.Name = "pictureBox3";
@@ -194,6 +198,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = global::Project_Login.Properties.Resources._4051934_middle;
             this.pictureBox1.Location = new System.Drawing.Point(388, 98);
             this.pictureBox1.Name = "pictureBox1";
@@ -211,7 +216,7 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Hotel Management System";
             // 
-            // Form1
+            // LoginPanle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -224,7 +229,7 @@
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Form1";
+            this.Name = "LoginPanle";
             this.Text = "Login panel";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

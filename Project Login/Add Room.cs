@@ -29,7 +29,7 @@ namespace Project_Login
             string price = tbPrice.Text;
             //Exceptrions
 
-            if (roomNumber == string.Empty && roomType == string.Empty && bedType == string.Empty && price == string.Empty)
+            if (roomNumber == string.Empty || roomType == string.Empty || bedType == string.Empty || price == string.Empty)
             {
                 MessageBox.Show("Please fill up the required fields!!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -124,5 +124,6 @@ namespace Project_Login
             conn.Close();
             dtAddRoom.DataSource = room;
         }
+
     }
 }

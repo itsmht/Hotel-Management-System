@@ -169,6 +169,7 @@
             // dtpBirthDate
             // 
             this.dtpBirthDate.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpBirthDate.Location = new System.Drawing.Point(284, 254);
             this.dtpBirthDate.Name = "dtpBirthDate";
             this.dtpBirthDate.Size = new System.Drawing.Size(295, 31);
@@ -189,6 +190,7 @@
             this.tbPass.Name = "tbPass";
             this.tbPass.Size = new System.Drawing.Size(295, 31);
             this.tbPass.TabIndex = 67;
+            this.tbPass.UseSystemPasswordChar = true;
             // 
             // btnRegister
             // 

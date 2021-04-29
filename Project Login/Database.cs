@@ -11,9 +11,10 @@ namespace Project_Login
     {
         public static SqlConnection ConnectDB()
         {
-            string connString = @"Server=WINDOWS-EKS4LMU\SQLEXPRESS;Database=HMS;Integrated Security=true;";
+            string connString = @"Server=DESKTOP-R1KIF9B\SQLEXPRESS;Database=HMS;Integrated Security=true;";
             SqlConnection conn = new SqlConnection(connString);
             return conn;
         }
+       
     }
 }

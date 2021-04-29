@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace Project_Login
 {
-    public partial class Form1 : Form
+    public partial class LoginPanle : Form
     {
-        public Form1()
+        public LoginPanle()
         {
             InitializeComponent();
         }

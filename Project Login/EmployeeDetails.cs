@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Collections;
 
 namespace Project_Login
 {
@@ -27,6 +29,46 @@ namespace Project_Login
             base.OnFormClosing(e);
             if (e.CloseReason != CloseReason.WindowsShutDown)
                 Application.Exit();
+        }
+
+        private void EmployeeDetails_Load(object sender, EventArgs e)
+        {
+            List<CEmployeeDetails> cEmployeeDetails = new List<CEmployeeDetails>();
+            var conn = Database.ConnectDB();
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            string query = "select * from [user]";
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    CEmployeeDetails emp = new CEmployeeDetails();
+                    emp.Id = reader.GetInt32(reader.GetOrdinal("Id"));
+                    emp.Name = reader.GetString(reader.GetOrdinal("Name"));
+                    emp.Email = reader.GetString(reader.GetOrdinal("Email"));
+                    emp.Gender = reader.GetString(reader.GetOrdinal("Gender"));
+                    //emp.DOB = reader.GetString(reader.GetOrdinal("DOB"));
+                    emp.Username = reader.GetString(reader.GetOrdinal("Username"));
+                    emp.Password = reader.GetString(reader.GetOrdinal("Password"));
+
+                    cEmployeeDetails.Add(emp);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            conn.Close();
+            dtEmployeeDetails.DataSource = cEmployeeDetails;
         }
     }
 }

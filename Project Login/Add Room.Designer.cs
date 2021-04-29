@@ -110,6 +110,7 @@
             this.dtAddRoom.Name = "dtAddRoom";
             this.dtAddRoom.Size = new System.Drawing.Size(403, 400);
             this.dtAddRoom.TabIndex = 10;
+            
             // 
             // btnAddRoom
             // 

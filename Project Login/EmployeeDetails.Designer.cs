@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtEmployeeDetails = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtEmployeeDetails)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -44,14 +44,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Employee Details";
             // 
-            // dataGridView1
+            // dtEmployeeDetails
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 107);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(880, 392);
-            this.dataGridView1.TabIndex = 2;
+            this.dtEmployeeDetails.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dtEmployeeDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtEmployeeDetails.Location = new System.Drawing.Point(12, 107);
+            this.dtEmployeeDetails.Name = "dtEmployeeDetails";
+            this.dtEmployeeDetails.Size = new System.Drawing.Size(880, 392);
+            this.dtEmployeeDetails.TabIndex = 2;
             // 
             // button2
             // 
@@ -71,11 +71,12 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(904, 511);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtEmployeeDetails);
             this.Controls.Add(this.label1);
             this.Name = "EmployeeDetails";
             this.Text = "EmployeeDetails";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.EmployeeDetails_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtEmployeeDetails)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,7 +85,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtEmployeeDetails;
         private System.Windows.Forms.Button button2;
 
     }

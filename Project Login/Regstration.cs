@@ -41,7 +41,7 @@ namespace Project_Login
 
         private void button3_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new LoginPanle().Show();
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
@@ -100,6 +100,8 @@ namespace Project_Login
                 if (r > 0)
                 {
                     MessageBox.Show("Registration Successfull");
+                    new LoginPanle().Show();
+                    this.Hide();
                 }
                 else
                 {
