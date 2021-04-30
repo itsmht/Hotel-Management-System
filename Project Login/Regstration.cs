@@ -92,29 +92,49 @@ namespace Project_Login
             {
                 MessageBox.Show(ex.Message);
             }
-            string query = string.Format("insert into [user] values ('{0}','{1}','{2}','{3}','{4}','{5}')",name ,email, gender,date,username,pass );
-            try
-            {
-                SqlCommand cmd = new SqlCommand(query, conn);
-                int r = cmd.ExecuteNonQuery();
-                if (r > 0)
-                {
-                    MessageBox.Show("Registration Successfull");
-                    new LoginPanle().Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Failed to Register");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                    
+                    string checkuser = "SELECT * FROM [user] where username='" + username + "'";
+                    SqlCommand cmd2 = new SqlCommand(checkuser, conn);
+                    cmd2.Parameters.AddWithValue("Username", username);
+                    var result = cmd2.ExecuteScalar();
+                    if (result != null)
+                    {
+                        MessageBox.Show("User Already Exists");
+                    }
+                    else
+                    {
+                        string query = string.Format("insert into [user] values ('{0}','{1}','{2}','{3}','{4}','{5}')", name, email, gender, date, username, pass);
+                        try
+                        {
+                            SqlCommand cmd = new SqlCommand(query, conn);
+                            int r = cmd.ExecuteNonQuery();
+                            if (r > 0)
+                            {
+
+
+
+
+                                MessageBox.Show("Registration Successfull");
+                                this.Hide();
+                                new LoginPanle().Show();
+
+
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("Failed to Register");
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
+            
             conn.Close();
             }
-            
+      
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -122,6 +142,12 @@ namespace Project_Login
             base.OnFormClosing(e);
             if (e.CloseReason != CloseReason.WindowsShutDown)
                 Application.Exit();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new LoginPanle().Show();
         }
     }
 }

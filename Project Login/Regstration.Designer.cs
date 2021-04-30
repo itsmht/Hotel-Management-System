@@ -44,6 +44,7 @@
             this.tbUserName = new System.Windows.Forms.TextBox();
             this.tbPass = new System.Windows.Forms.TextBox();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -195,13 +196,24 @@
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(344, 407);
+            this.btnRegister.Location = new System.Drawing.Point(284, 407);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(164, 61);
+            this.btnRegister.Size = new System.Drawing.Size(132, 61);
             this.btnRegister.TabIndex = 68;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(447, 407);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(132, 61);
+            this.btnLogin.TabIndex = 69;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Regstration
             // 
@@ -209,6 +221,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(904, 511);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.tbPass);
             this.Controls.Add(this.tbUserName);
@@ -250,5 +263,6 @@
         private System.Windows.Forms.TextBox tbUserName;
         private System.Windows.Forms.TextBox tbPass;
         private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
