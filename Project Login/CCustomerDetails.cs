@@ -13,7 +13,7 @@ namespace Project_Login
         public string Address { get; set; }
         public string ContactNo { get; set; }
         public string Gender { get; set; }
-       // public string DOB { get; set; }
+        public string DOB { get; set; }
         public string Email { get; set; }
         public string Bed { get; set; }
         public string RoomType { get; set; }

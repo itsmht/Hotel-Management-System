@@ -63,8 +63,10 @@ namespace Project_Login
         {
             string username = tbUserName.Text;
             string password = tbPassword.Text;
-            var conn = Database.ConnectDB();
 
+
+
+            var conn = Database.ConnectDB();
 
             try
             {

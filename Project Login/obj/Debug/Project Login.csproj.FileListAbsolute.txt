@@ -36,17 +36,15 @@ C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\bin\Debug\P
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\bin\Debug\Project Login.pdb
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project Login.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Add_Room.resources
-C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.AllCustomerDetails.resources
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.CheckOut.resources
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Customer_Details.resources
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Customer_Service.resources
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.EmployeeDelete.resources
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.EmployeeDetails.resources
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.EmployeeExtended.resources
-C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Form1.resources
-C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.InHotelCustomerDetails.resources
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.MainManu.resources
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Properties.Resources.resources
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Regstration.resources
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project Login.csproj.GenerateResource.Cache
 H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.LoginPanle.resources
+C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.LoginPanle.resources

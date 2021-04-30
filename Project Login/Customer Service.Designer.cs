@@ -56,6 +56,7 @@
             this.tbPrice = new System.Windows.Forms.TextBox();
             this.cbRoomType = new System.Windows.Forms.ComboBox();
             this.cbBed = new System.Windows.Forms.ComboBox();
+            this.btnBBM = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -214,7 +215,7 @@
             // 
             this.btnSubmit.BackColor = System.Drawing.Color.RosyBrown;
             this.btnSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(594, 458);
+            this.btnSubmit.Location = new System.Drawing.Point(492, 458);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(178, 41);
             this.btnSubmit.TabIndex = 31;
@@ -363,12 +364,25 @@
             this.cbBed.TabIndex = 95;
             this.cbBed.SelectedIndexChanged += new System.EventHandler(this.cbBed_SelectedIndexChanged);
             // 
+            // btnBBM
+            // 
+            this.btnBBM.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnBBM.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBBM.Location = new System.Drawing.Point(699, 458);
+            this.btnBBM.Name = "btnBBM";
+            this.btnBBM.Size = new System.Drawing.Size(178, 41);
+            this.btnBBM.TabIndex = 92;
+            this.btnBBM.Text = "Back to Menu";
+            this.btnBBM.UseVisualStyleBackColor = false;
+            this.btnBBM.Click += new System.EventHandler(this.btnBBM_Click);
+            // 
             // Customer_Service
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(904, 511);
+            this.Controls.Add(this.btnBBM);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label10);
@@ -377,7 +391,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Customer_Service";
             this.Text = "Customer_Service";
-            
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -419,6 +432,7 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox cbRoomNo;
         private System.Windows.Forms.RichTextBox rtbAddress;
+        private System.Windows.Forms.Button btnBBM;
 
     }
 }

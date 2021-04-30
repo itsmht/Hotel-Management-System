@@ -30,24 +30,26 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbSearchID = new System.Windows.Forms.TextBox();
+            this.dtGuestCheckOut = new System.Windows.Forms.DataGridView();
+            this.tbSearchedName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbSearchedRoomNo = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnCheckOut = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btnLoad = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGuestCheckOut)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cooper Black", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 19);
+            this.label1.Location = new System.Drawing.Point(233, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(390, 40);
             this.label1.TabIndex = 0;
@@ -58,37 +60,37 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(68, 80);
+            this.label2.Location = new System.Drawing.Point(35, 178);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 26);
+            this.label2.Size = new System.Drawing.Size(82, 26);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Name";
+            this.label2.Text = "Enter ID";
             // 
-            // textBox1
+            // tbSearchID
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(138, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 31);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tbSearchID.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearchID.Location = new System.Drawing.Point(128, 178);
+            this.tbSearchID.Name = "tbSearchID";
+            this.tbSearchID.Size = new System.Drawing.Size(182, 31);
+            this.tbSearchID.TabIndex = 2;
+            this.tbSearchID.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // dataGridView1
+            // dtGuestCheckOut
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 131);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(880, 241);
-            this.dataGridView1.TabIndex = 3;
+            this.dtGuestCheckOut.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dtGuestCheckOut.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGuestCheckOut.Location = new System.Drawing.Point(412, 127);
+            this.dtGuestCheckOut.Name = "dtGuestCheckOut";
+            this.dtGuestCheckOut.Size = new System.Drawing.Size(490, 215);
+            this.dtGuestCheckOut.TabIndex = 3;
             // 
-            // textBox2
+            // tbSearchedName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(40, 438);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 31);
-            this.textBox2.TabIndex = 5;
+            this.tbSearchedName.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearchedName.Location = new System.Drawing.Point(40, 438);
+            this.tbSearchedName.Name = "tbSearchedName";
+            this.tbSearchedName.Size = new System.Drawing.Size(182, 31);
+            this.tbSearchedName.TabIndex = 5;
             // 
             // label3
             // 
@@ -100,13 +102,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Name";
             // 
-            // textBox3
+            // tbSearchedRoomNo
             // 
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(278, 438);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(182, 31);
-            this.textBox3.TabIndex = 7;
+            this.tbSearchedRoomNo.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearchedRoomNo.Location = new System.Drawing.Point(278, 438);
+            this.tbSearchedRoomNo.Name = "tbSearchedRoomNo";
+            this.tbSearchedRoomNo.Size = new System.Drawing.Size(182, 31);
+            this.tbSearchedRoomNo.TabIndex = 7;
             // 
             // label4
             // 
@@ -138,25 +140,49 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(198, 23);
             this.dateTimePicker1.TabIndex = 9;
             // 
-            // button1
+            // btnCheckOut
             // 
-            this.button1.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(755, 438);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 31);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Check-Out";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckOut.Location = new System.Drawing.Point(755, 438);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(124, 31);
+            this.btnCheckOut.TabIndex = 10;
+            this.btnCheckOut.Text = "Check-Out";
+            this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
-            // button2
+            // btnSearch
             // 
-            this.button2.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(365, 75);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 31);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSearch.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Location = new System.Drawing.Point(128, 237);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(130, 31);
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(760, 37);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(132, 31);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Back to Menu";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.Location = new System.Drawing.Point(762, 90);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(130, 31);
+            this.btnLoad.TabIndex = 13;
+            this.btnLoad.Text = "Load All Data";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // CheckOut
             // 
@@ -164,21 +190,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(904, 511);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLoad);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.btnCheckOut);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbSearchedRoomNo);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbSearchedName);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dtGuestCheckOut);
+            this.Controls.Add(this.tbSearchID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "CheckOut";
             this.Text = "CheckOut";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGuestCheckOut)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,15 +216,17 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbSearchID;
+        private System.Windows.Forms.TextBox tbSearchedName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbSearchedRoomNo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCheckOut;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.DataGridView dtGuestCheckOut;
     }
 }

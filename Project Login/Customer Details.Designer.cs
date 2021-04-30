@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dtCustomerDetails = new System.Windows.Forms.DataGridView();
+            this.btnBBM = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtCustomerDetails)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,12 +54,24 @@
             this.dtCustomerDetails.Size = new System.Drawing.Size(880, 392);
             this.dtCustomerDetails.TabIndex = 4;
             // 
+            // btnBBM
+            // 
+            this.btnBBM.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBBM.Location = new System.Drawing.Point(760, 29);
+            this.btnBBM.Name = "btnBBM";
+            this.btnBBM.Size = new System.Drawing.Size(132, 31);
+            this.btnBBM.TabIndex = 13;
+            this.btnBBM.Text = "Back to Menu";
+            this.btnBBM.UseVisualStyleBackColor = true;
+            this.btnBBM.Click += new System.EventHandler(this.btnBBM_Click);
+            // 
             // Customer_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(904, 511);
+            this.Controls.Add(this.btnBBM);
             this.Controls.Add(this.dtCustomerDetails);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -75,5 +88,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dtCustomerDetails;
+        private System.Windows.Forms.Button btnBBM;
     }
 }

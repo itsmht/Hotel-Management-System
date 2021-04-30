@@ -56,7 +56,7 @@ namespace Project_Login
                     emp.Name = reader.GetString(reader.GetOrdinal("Name"));
                     emp.Email = reader.GetString(reader.GetOrdinal("Email"));
                     emp.Gender = reader.GetString(reader.GetOrdinal("Gender"));
-                    //emp.DOB = reader.GetString(reader.GetOrdinal("DOB"));
+                    emp.DOB = reader.GetString(reader.GetOrdinal("DateOfBirth"));
                     emp.Username = reader.GetString(reader.GetOrdinal("Username"));
                     emp.Password = reader.GetString(reader.GetOrdinal("Password"));
 

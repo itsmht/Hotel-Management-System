@@ -52,7 +52,7 @@ namespace Project_Login
                     cd.Address = reader.GetString(reader.GetOrdinal("Address"));
                     cd.ContactNo = reader.GetString(reader.GetOrdinal("ContactNo"));
                     cd.Gender = reader.GetString(reader.GetOrdinal("Gender"));
-                    //cd.DOB = reader.GetString(reader.GetOrdinal("DOB"));
+                    cd.DOB = reader.GetString(reader.GetOrdinal("DateOfBirth"));
                     cd.Email = reader.GetString(reader.GetOrdinal("Email"));
                     cd.Bed = reader.GetString(reader.GetOrdinal("Bed"));
                     cd.RoomType = reader.GetString(reader.GetOrdinal("RoomType"));
@@ -69,6 +69,19 @@ namespace Project_Login
             }
             conn.Close();
             dtCustomerDetails.DataSource = cCustomerDetails;
+        }
+
+        private void btnBBM_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MainManu().Show();
+
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
         }
     }
 }

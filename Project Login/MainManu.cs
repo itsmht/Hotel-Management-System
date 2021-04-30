@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Collections;
 
 namespace Project_Login
 {
@@ -45,6 +47,9 @@ namespace Project_Login
         {
             this.Hide();
             new CheckOut().Show();
+
+            
+
         }
         protected override void OnFormClosing(FormClosingEventArgs e)
         {

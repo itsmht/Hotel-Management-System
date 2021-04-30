@@ -145,12 +145,12 @@ namespace Project_Login
                   int r = cmd.ExecuteNonQuery();
                   if (r > 0)
                   {
-                      MessageBox.Show("Room Allote Succesfully");
+                      MessageBox.Show("Room Allocated Succesfully");
                       
                   }
                   else
                   {
-                      MessageBox.Show("Failed to Allote Room");
+                      MessageBox.Show("Failed to Allocate Room");
                   }
               }
               catch (Exception ex)
@@ -160,6 +160,18 @@ namespace Project_Login
               conn.Close();
           }
       }
+
+      private void btnBBM_Click(object sender, EventArgs e)
+      {
+          this.Hide();
+          new MainManu().Show();
+      }
+        /*  protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+             base.OnFormClosing(e);
+             if (e.CloseReason != CloseReason.WindowsShutDown)
+                 Application.Exit();
+         }*/
 
       
      }

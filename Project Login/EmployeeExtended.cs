@@ -19,17 +19,32 @@ namespace Project_Login
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new Regstration().Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new EmployeeDetails().Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
             new EmployeeDelete ().Show();
+        }
+
+        private void btnBBM_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MainManu().Show();
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
         }
     }
 }
