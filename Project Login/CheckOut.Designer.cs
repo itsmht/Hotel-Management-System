@@ -41,7 +41,6 @@
             this.btnCheckOut = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.btnLoad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtGuestCheckOut)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,24 +172,12 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // btnLoad
-            // 
-            this.btnLoad.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoad.Location = new System.Drawing.Point(762, 90);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(130, 31);
-            this.btnLoad.TabIndex = 13;
-            this.btnLoad.Text = "Load All Data";
-            this.btnLoad.UseVisualStyleBackColor = true;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
-            // 
             // CheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(904, 511);
-            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnCheckOut);
@@ -206,6 +193,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CheckOut";
             this.Text = "CheckOut";
+            this.Load += new System.EventHandler(this.CheckOut_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtGuestCheckOut)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -226,7 +214,6 @@
         private System.Windows.Forms.Button btnCheckOut;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.DataGridView dtGuestCheckOut;
     }
 }

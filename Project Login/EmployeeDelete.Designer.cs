@@ -32,7 +32,6 @@
             this.tbSearchID = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.dtEmployeeDetails = new System.Windows.Forms.DataGridView();
-            this.btnLoad = new System.Windows.Forms.Button();
             this.btnBBM = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtEmployeeDetails)).BeginInit();
@@ -76,18 +75,6 @@
             this.dtEmployeeDetails.Name = "dtEmployeeDetails";
             this.dtEmployeeDetails.Size = new System.Drawing.Size(468, 280);
             this.dtEmployeeDetails.TabIndex = 6;
-            this.dtEmployeeDetails.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // btnLoad
-            // 
-            this.btnLoad.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnLoad.Location = new System.Drawing.Point(765, 95);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(127, 47);
-            this.btnLoad.TabIndex = 7;
-            this.btnLoad.Text = "Load All";
-            this.btnLoad.UseVisualStyleBackColor = true;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnBBM
             // 
@@ -118,13 +105,13 @@
             this.ClientSize = new System.Drawing.Size(904, 511);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnBBM);
-            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.dtEmployeeDetails);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.tbSearchID);
             this.Controls.Add(this.label1);
             this.Name = "EmployeeDelete";
             this.Text = "EmployeeDelete";
+            this.Load += new System.EventHandler(this.EmployeeDelete_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtEmployeeDetails)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -137,7 +124,6 @@
         private System.Windows.Forms.TextBox tbSearchID;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView dtEmployeeDetails;
-        private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.Button btnBBM;
         private System.Windows.Forms.Label label2;
     }

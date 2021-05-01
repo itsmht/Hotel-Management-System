@@ -40,7 +40,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnBBM = new System.Windows.Forms.Button();
-            this.btnLoad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtAddRoom)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +109,6 @@
             this.dtAddRoom.Name = "dtAddRoom";
             this.dtAddRoom.Size = new System.Drawing.Size(403, 400);
             this.dtAddRoom.TabIndex = 10;
-            
             // 
             // btnAddRoom
             // 
@@ -174,24 +172,12 @@
             this.btnBBM.UseVisualStyleBackColor = true;
             this.btnBBM.Click += new System.EventHandler(this.btnBBM_Click);
             // 
-            // btnLoad
-            // 
-            this.btnLoad.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoad.Location = new System.Drawing.Point(356, 363);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(109, 40);
-            this.btnLoad.TabIndex = 62;
-            this.btnLoad.Text = "Load";
-            this.btnLoad.UseVisualStyleBackColor = true;
-            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
-            // 
             // Add_Room
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(904, 511);
-            this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnBBM);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -207,6 +193,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Add_Room";
             this.Text = "Add_Room";
+            this.Load += new System.EventHandler(this.Add_Room_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtAddRoom)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -227,6 +214,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnBBM;
-        private System.Windows.Forms.Button btnLoad;
     }
 }

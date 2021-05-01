@@ -68,10 +68,9 @@ namespace Project_Login
                 }
                 conn.Close();
 
-
+                var room = GetAllRoom();
+                dtAddRoom.DataSource = room;
                 
-
-
             }
         }
       
@@ -87,7 +86,8 @@ namespace Project_Login
                 Application.Exit();
         }
 
-        private void btnLoad_Click(object sender, EventArgs e)
+      
+        List<Room> GetAllRoom()
         {
             List<Room> room = new List<Room>();
             var conn = Database.ConnectDB();
@@ -122,6 +122,12 @@ namespace Project_Login
                 MessageBox.Show(ex.Message);
             }
             conn.Close();
+            return room;
+        }
+
+        private void Add_Room_Load(object sender, EventArgs e)
+        {
+            var room = GetAllRoom();
             dtAddRoom.DataSource = room;
         }
 

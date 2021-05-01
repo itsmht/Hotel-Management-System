@@ -19,12 +19,53 @@ namespace Project_Login
             InitializeComponent();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+       
+       
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            var conn = Database.ConnectDB();
+
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            //int id = Int32.Parse(tbSearchID.Text);
+            //string query = "delete * from guest where id =  " + id;
+            string query = "DELETE FROM [user] WHERE id = '" + tbSearchID.Text + "'";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Employee Deleted Successfully!!");
+            conn.Close();
+            var cEmployeeDetails = GetAllEmployee();
+            dtEmployeeDetails.DataSource = cEmployeeDetails;
+            
+        }
+        
+
+        private void btnBBM_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new MainManu().Show();
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
         }
 
-        private void btnLoad_Click(object sender, EventArgs e)
+        private void EmployeeDelete_Load(object sender, EventArgs e)
+        {
+            var cEmployeeDetails = GetAllEmployee();
+            dtEmployeeDetails.DataSource = cEmployeeDetails;
+        }
+        List<CEmployeeDetails> GetAllEmployee()
         {
             List<CEmployeeDetails> cEmployeeDetails = new List<CEmployeeDetails>();
             var conn = Database.ConnectDB();
@@ -61,43 +102,7 @@ namespace Project_Login
                 MessageBox.Show(ex.Message);
             }
             conn.Close();
-            dtEmployeeDetails.DataSource = cEmployeeDetails;
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            var conn = Database.ConnectDB();
-
-            try
-            {
-                conn.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            //int id = Int32.Parse(tbSearchID.Text);
-            //string query = "delete * from guest where id =  " + id;
-            string query = "DELETE FROM [user] WHERE id = '" + tbSearchID.Text + "'";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            int r = cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Employee Deleted Successfully!!");
-            conn.Close();
-            
-        }
-        
-
-        private void btnBBM_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new MainManu().Show();
-        }
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            base.OnFormClosing(e);
-            if (e.CloseReason != CloseReason.WindowsShutDown)
-                Application.Exit();
+            return cEmployeeDetails;
         }
     }
 }

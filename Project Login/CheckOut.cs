@@ -78,7 +78,45 @@ namespace Project_Login
 
         }
 
-        private void btnLoad_Click(object sender, EventArgs e)
+      
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            var conn = Database.ConnectDB();
+
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            //int id = Int32.Parse(tbSearchID.Text);
+            //string query = "delete * from guest where id =  " + id;
+            string query = "DELETE FROM guest WHERE id = '"+tbSearchID.Text+"'";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            int r = cmd.ExecuteNonQuery();
+            conn.Close();
+            MessageBox.Show("Checkout Success!!");
+            conn.Close();
+            var cCustomerDetails = GetAllCustomer();
+            dtGuestCheckOut.DataSource = cCustomerDetails;
+
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            base.OnFormClosing(e);
+            if (e.CloseReason != CloseReason.WindowsShutDown)
+                Application.Exit();
+        }
+
+        private void CheckOut_Load(object sender, EventArgs e)
+        {
+            var cCustomerDetails = GetAllCustomer();
+            dtGuestCheckOut.DataSource = cCustomerDetails;
+        }
+        List<CCustomerDetails> GetAllCustomer()
         {
             List<CCustomerDetails> cCustomerDetails = new List<CCustomerDetails>();
             var conn = Database.ConnectDB();
@@ -120,38 +158,7 @@ namespace Project_Login
                 MessageBox.Show(ex.Message);
             }
             conn.Close();
-            dtGuestCheckOut.DataSource = cCustomerDetails;
-    
-
-        }
-
-        private void btnCheckOut_Click(object sender, EventArgs e)
-        {
-            var conn = Database.ConnectDB();
-
-            try
-            {
-                conn.Open();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            //int id = Int32.Parse(tbSearchID.Text);
-            //string query = "delete * from guest where id =  " + id;
-            string query = "DELETE FROM guest WHERE id = '"+tbSearchID.Text+"'";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            int r = cmd.ExecuteNonQuery();
-            conn.Close();
-            MessageBox.Show("Checkout Success!!");
-            conn.Close();
-
-        }
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            base.OnFormClosing(e);
-            if (e.CloseReason != CloseReason.WindowsShutDown)
-                Application.Exit();
+            return cCustomerDetails;
         }
     }
 }

@@ -33,6 +33,11 @@ namespace Project_Login
 
         private void EmployeeDetails_Load(object sender, EventArgs e)
         {
+            var cEmployeeDetails = GetAllEmployee();
+            dtEmployeeDetails.DataSource = cEmployeeDetails;
+        }
+        List<CEmployeeDetails> GetAllEmployee()
+        {
             List<CEmployeeDetails> cEmployeeDetails = new List<CEmployeeDetails>();
             var conn = Database.ConnectDB();
             try
@@ -68,7 +73,7 @@ namespace Project_Login
                 MessageBox.Show(ex.Message);
             }
             conn.Close();
-            dtEmployeeDetails.DataSource = cEmployeeDetails;
+            return cEmployeeDetails;
         }
     }
 }
