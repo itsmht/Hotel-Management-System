@@ -166,12 +166,14 @@ namespace Project_Login
           this.Hide();
           new MainManu().Show();
       }
-        /*  protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-             base.OnFormClosing(e);
-             if (e.CloseReason != CloseReason.WindowsShutDown)
-                 Application.Exit();
-         }*/
+
+      private void Customer_Service_Load(object sender, EventArgs e)
+      {
+          panel2.BackColor = Color.FromArgb(100, 0, 0, 0);
+          panel4.BackColor = Color.FromArgb(100, 0, 0, 0);
+          panel5.BackColor = Color.FromArgb(100, 0, 0, 0);
+      }
+        
 
       
      }

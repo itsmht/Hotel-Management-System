@@ -178,6 +178,21 @@
   <ItemGroup>
     <None Include="Resources\download1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return-button1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manuel-moreno-DGa0LQ0yDPc-unsplash1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet-earth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlocked-padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

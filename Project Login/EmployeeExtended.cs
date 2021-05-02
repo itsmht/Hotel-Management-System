@@ -46,5 +46,10 @@ namespace Project_Login
             if (e.CloseReason != CloseReason.WindowsShutDown)
                 Application.Exit();
         }
+
+        private void EmployeeExtended_Load(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
+        }
     }
 }

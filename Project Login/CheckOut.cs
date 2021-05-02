@@ -115,6 +115,8 @@ namespace Project_Login
         {
             var cCustomerDetails = GetAllCustomer();
             dtGuestCheckOut.DataSource = cCustomerDetails;
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
+            panel2.BackColor = Color.FromArgb(100, 0, 0, 0);
         }
         List<CCustomerDetails> GetAllCustomer()
         {

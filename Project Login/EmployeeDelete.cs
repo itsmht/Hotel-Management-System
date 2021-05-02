@@ -64,6 +64,7 @@ namespace Project_Login
         {
             var cEmployeeDetails = GetAllEmployee();
             dtEmployeeDetails.DataSource = cEmployeeDetails;
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
         }
         List<CEmployeeDetails> GetAllEmployee()
         {
@@ -92,7 +93,7 @@ namespace Project_Login
                     emp.Gender = reader.GetString(reader.GetOrdinal("Gender"));
                     emp.DOB = reader.GetString(reader.GetOrdinal("DateOfBirth"));
                     emp.Username = reader.GetString(reader.GetOrdinal("Username"));
-                    emp.Password = reader.GetString(reader.GetOrdinal("Password"));
+                    //emp.Password = reader.GetString(reader.GetOrdinal("Password"));
 
                     cEmployeeDetails.Add(emp);
                 }
@@ -103,6 +104,12 @@ namespace Project_Login
             }
             conn.Close();
             return cEmployeeDetails;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new EmployeeExtended().Show();
         }
     }
 }

@@ -149,5 +149,10 @@ namespace Project_Login
             this.Hide();
             new LoginPanle().Show();
         }
+
+        private void Regstration_Load(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
+        }
     }
 }
