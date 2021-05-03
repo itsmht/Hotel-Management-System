@@ -73,9 +73,29 @@ namespace Project_Login.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1828479 {
+            get {
+                object obj = ResourceManager.GetObject("1828479", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4051934_middle {
             get {
                 object obj = ResourceManager.GetObject("4051934-middle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _565503 {
+            get {
+                object obj = ResourceManager.GetObject("565503", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
