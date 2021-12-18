@@ -14,7 +14,6 @@ H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug
 H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project Login.pdb
 H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\bin\Debug\Project Login.exe
 H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\bin\Debug\Project Login.pdb
-H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project Login.csprojResolveAssemblyReference.cache
 H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Customer_Service.resources
 H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Properties.Resources.resources
 H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.Regstration.resources
@@ -48,3 +47,5 @@ C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\P
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project Login.csproj.GenerateResource.Cache
 H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project_Login.LoginPanle.resources
 C:\Users\User\Documents\GitHub\Hotel-Management-System\Project Login\obj\Debug\Project_Login.LoginPanle.resources
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project Login.csproj.AssemblyReference.cache
+H:\Semester 6\OOP2\Final project\Hotel-Management-System\Project Login\obj\Debug\Project Login.csproj.CoreCompileInputs.cache

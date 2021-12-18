@@ -110,15 +110,9 @@ namespace Project_Login
                             int r = cmd.ExecuteNonQuery();
                             if (r > 0)
                             {
-
-
-
-
                                 MessageBox.Show("Registration Successfull");
                                 this.Hide();
                                 new LoginPanle().Show();
-
-
 
                             }
                             else

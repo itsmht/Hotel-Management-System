@@ -23,7 +23,8 @@ namespace Project_Login
         {
             string bed = cbBed.Text.ToString();
             string RoomType = cbRoomType.Text.ToString();
-           var conn = Database.ConnectDB(); 
+         
+          var conn = Database.ConnectDB(); 
            try
             {
                 conn.Open();
@@ -54,7 +55,7 @@ namespace Project_Login
         }
       
       private void cbRoomType_SelectedIndexChanged(object sender, EventArgs e)
-      {
+      { 
           cbRoomNo.Items.Clear();
           setComboBox(cbRoomNo);
           
